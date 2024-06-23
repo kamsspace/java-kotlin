@@ -1,6 +1,6 @@
 package java-generics;
 
-public class GenericsAppUpdated {
+public class GenericsApp {
     
     public static Stack<String> makeStackString(Stack<String> strings) {
         strings.push("Hello");
