@@ -1,4 +1,4 @@
-package generics;
+package java-generics;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
