@@ -20,6 +20,6 @@ public class StackArray<E> implements Stack<E> {
 
     @Override
     public E pop() {
-        return tos > 0 : stack[--tos] : null;
+        return tos > 0 ? stack[--tos] : null;
     }
 }
