@@ -29,6 +29,12 @@ public class GenericsApp {
         return cars;
     }
 
+    public static void printStack(Stack<?> stack) {
+        for(Object e = stack.pop(); e != null; e = stack.pop()) {
+            System.out.println(e);
+        }
+    }
+    
     public static void printStackRaw(Stack stack) {
         for(Object e = stack.pop(); e != null; e = stack.pop()) {
             System.out.println(e);
@@ -76,6 +82,10 @@ public class GenericsApp {
         Stack<Integer> ints = new StackArray<>();
         Stack<String> strings = new StackArray<>();
         Stack<SportsCar> racers = new StackArray<>();
+
+        printStack(makeStackInteger(ints));
+        printStack(makeStackString(strings));
+        printStack(makeStackSportsCar(racers));
 
         // print them out raw ... it works
         printStackRaw(makeStackInteger(ints));     
