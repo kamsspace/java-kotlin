@@ -25,7 +25,7 @@ open class Planet(name: String, diameter: Int, val logger: Logger) : SpaceBody(n
     }
 
     override fun calculateMotion() {
-        TODO("Not yet implemented")
+
     }
 
 }
@@ -39,6 +39,6 @@ class HabitablePlanet(name: String, diameter: Int, logger: Logger) : Planet(name
     }
 
     override fun calculateMotion() {
-        TODO("Not yet implemented")
+
     }
 }
